@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee Management - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Employee Dashboard</h2>
+    <table border="1" id="employeeTable">
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+    <button onclick="loadEmployees()">Refresh Employees</button>
+    <button onclick="logout()">Logout</button>
+
+    <h3>Add New Employee</h3>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="department" placeholder="Department">
+    <input type="number" id="salary" placeholder="Salary">
+    <button onclick="addEmployee()">Add Employee</button>
+</div>
+</body>
+</html>
